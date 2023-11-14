@@ -1,0 +1,286 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+  body {
+    color: white;
+    background: black;
+  }
+}
+/* purgecss start ignore */
+@import "~formiojs/dist/formio.full.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import "../src/components/formiopages/Custom/styles/bxicons/index.css"; */
+/* @import "./typography.css";
+@import "./elements.css"; */
+/* @import "../src/components/formiopages/Custom/styles/index.css"; */
+/* @import "~@tsed/tailwind-formio/styles/index.css"; */
+
+@layer base {
+
+  h1 {
+    @apply text-3xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-lg;
+  }
+
+  @font-face {
+    font-family: Inter;
+    font-weight: 100 900;
+    src: url(/fonts/inter.ttf);
+  }
+
+  @font-face {
+    font-family: Inter-Bold;
+    src: url(/fonts/static/inter-bold.ttf);
+  }
+
+  /* formio tailwind customization - start */
+
+  .formbuilder .btn-primary {
+    @apply bg-indigo-600 text-white;
+  }
+
+  .formio-dialog .btn-primary {
+    @apply bg-indigo-600 text-white;
+  }
+
+  .formio-dialog .ace_gutter {
+    @apply bg-transparent;
+  }
+
+  .formio-dialog .component-edit-container .btn {
+    line-height: 1em;
+  }
+
+  .formio-dialog .nav.nav-tabs .nav-item.active a {
+    @apply cursor-pointer items-center rounded-2xl bg-indigo-200 text-indigo-700;
+  }
+
+  .formio-dialog .nav.nav-tabs {
+    @apply bg-white;
+  }
+
+  .formio-dialog .card-tabs .card-header-tabs .nav-item.active .nav-border {
+    @apply border-none;
+  }
+
+  .formio-dialog .ck {
+    ul,
+    ol {
+      list-style: revert;
+      list-style-position: inside;
+    }
+  }
+
+  .formio-dialog a.reset-link {
+    @apply hidden
+  }
+
+  .formio-dialog p, td, li, label {
+    font-size: unset; 
+    line-height: unset;
+    font-weight: unset;
+  }
+
+  .formbuilder p, td, li, label {
+    font-size: unset; 
+    line-height: unset;
+    font-weight: unset;
+  }
+
+  /* formio tailwind customization - end */
+
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  @apply bg-gray-scroll rounded-2xl;
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  @apply bg-white-smoke;
+}
+
+.scrollbar-custom::-webkit-scrollbar {
+  @apply w-2.5;
+}
+
+#autocomplete-results {
+  position: absolute;
+}
+
+.hover-trigger .hover-target {
+  display: none;
+}
+
+.hover-trigger:hover .hover-target {
+  display: block;
+}
+
+.child-color-white:hover>* {
+  color: white;
+}
+
+.powerBiReport {
+  height: 82vh;
+}
+
+.ql-tooltip {
+  left: 8px !important;
+}
+
+.ql-toolbar.ql-snow {
+  border-radius: 4px 4px 0px 0px !important;
+  border-color: #e5e7eb !important;
+}
+
+.ql-container.ql-snow {
+  border-color: #e5e7eb !important;
+}
+
+.active-menu-option {
+  --tw-bg-opacity: 1;
+  background-color: rgba(46, 76, 170, var(--tw-bg-opacity));
+}
+
+.w-25rem {
+  width: 25rem;
+}
+
+.compare-green {
+  background-color: #26c485;
+}
+
+.compare-orange {
+  background-color: #fe4c23;
+}
+
+.compare-blue {
+  background-color: #4a81f7;
+}
+
+[aria-label=" Column"] {
+  display: none !important;
+  height: 0px !important;
+  top: -10px !important;
+}
+
+body {
+  margin: 0px;
+  font-size: 16px;
+  line-height: 28px;
+
+  font-family: "Open Sans", serif;
+}
+
+.multiSelectContainer .searchBox {
+  width: 100%;
+}
+
+.overflow-visible-important {
+  overflow: visible !important;
+}
+
+.objects-filter>div {
+  padding-bottom: 2px;
+  padding-top: 2px;
+}
+
+.ant-card-body .ql-container.ql-snow {
+  border-width: 0px !important;
+}
+
+.service-mapping-report-table {
+  table-layout: fixed;
+}
+
+.service-mapping-report-table td,
+.service-mapping-report-table th {
+  word-break: break-all;
+  word-wrap: break-word;
+}
+
+.tiptap > * + * {
+  margin-top: 0.75em;
+}
+.tiptap ul, .tiptap ol {
+  padding: 0 1rem;
+}
+.tiptap ul, .tiptap ol {
+    list-style: revert;
+    list-style-position: inside;
+    /* display: flex; */
+}
+.tiptap li > p{
+  display: inline-block;
+}
+.tiptap h1, .tiptap h2, .tiptap h3, .tiptap h4, .tiptap h5, .tiptap h6 {
+  line-height: 1.1;
+}
+.tiptap code {
+  background-color: rgba(97, 97, 97, 0.1);
+  color: #616161;
+}
+.tiptap pre {
+  background: #0D0D0D;
+  color: #FFF;
+  font-family: 'JetBrainsMono', monospace;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+}
+.tiptap pre code {
+  color: inherit;
+  padding: 0;
+  background: none;
+  font-size: 0.8rem;
+}
+.tiptap img {
+  max-width: 100%;
+  height: auto;
+}
+.tiptap blockquote {
+  padding-left: 1rem;
+  border-left: 2px solid rgba(13, 13, 13, 0.1);
+}
+.tiptap hr {
+  border: none;
+  border-top: 2px solid rgba(13, 13, 13, 0.1);
+  margin: 2rem 0;
+}
+.tiptapWrapper button.test {
+  font-size: inherit;
+  font-family: inherit;
+  color: #000;
+  margin: .1rem;
+  border: 1px solid black;
+  border-radius: .3rem;
+  padding: .1rem .4rem;
+  background: white;
+  accent-color: black
+}
